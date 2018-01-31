@@ -1,7 +1,7 @@
 //=======================================================================
 // BasicALU for chisel3
 // watz0n
-// Jan. 1, 2018
+// Jan. 31, 2018
 // https://github.com/librecores/riscv-sodor/wiki/Tutorial-page-3#32-the-chisel-uint-class
 //=======================================================================
 package basicalu
