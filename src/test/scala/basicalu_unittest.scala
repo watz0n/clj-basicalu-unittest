@@ -19,6 +19,15 @@ class BasicALUPeekPokeTester(dut: BasicALU, a:UInt, b:UInt, op:UInt, c:UInt) ext
   step(1)
   expect(dut.io.output, c)
   step(1)
+  
+  //Use peek function in PeekPokeTester
+  //Ref: https://github.com/freechipsproject/chisel-testers/wiki/Using-the-PeekPokeTester#the-test-harness
+  if(peek(dut.io.output) == c.litValue()) {
+    println("Result as expect.")
+  }
+  else {
+    println("Something error.")
+  }
 
 }
 
